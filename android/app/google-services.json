@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "776473703039",
+    "firebase_url": "https://medical-31bb1-default-rtdb.firebaseio.com",
+    "project_id": "medical-31bb1",
+    "storage_bucket": "medical-31bb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776473703039:android:b78cee7a2f711120d4454a",
+        "android_client_info": {
+          "package_name": "com.evaluationofdentalpatients.medical_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776473703039-uapi890hqgnd6h02mm1q89hoe4283fs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCIPxx8cLT7O_JYDbLjBT11Y_rGqYOQwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776473703039-uapi890hqgnd6h02mm1q89hoe4283fs7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "776473703039-35t1i709gu982em274l1vpvj3aa9uddr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.medical1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776473703039:android:d1c62af0a2ded6f3d4454a",
+        "android_client_info": {
+          "package_name": "com.example.medical_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776473703039-uapi890hqgnd6h02mm1q89hoe4283fs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCIPxx8cLT7O_JYDbLjBT11Y_rGqYOQwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776473703039-uapi890hqgnd6h02mm1q89hoe4283fs7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "776473703039-35t1i709gu982em274l1vpvj3aa9uddr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.medical1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
