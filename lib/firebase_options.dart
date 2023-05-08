@@ -49,15 +49,17 @@ class DefaultFirebaseOptions {
     messagingSenderId: '776473703039',
     projectId: 'medical-31bb1',
     authDomain: 'medical-31bb1.firebaseapp.com',
+    databaseURL: 'https://medical-31bb1-default-rtdb.firebaseio.com',
     storageBucket: 'medical-31bb1.appspot.com',
     measurementId: 'G-XK0WPD5GJF',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDCIPxx8cLT7O_JYDbLjBT11Y_rGqYOQwA',
-    appId: '1:776473703039:android:d1c62af0a2ded6f3d4454a',
+    appId: '1:776473703039:android:b78cee7a2f711120d4454a',
     messagingSenderId: '776473703039',
     projectId: 'medical-31bb1',
+    databaseURL: 'https://medical-31bb1-default-rtdb.firebaseio.com',
     storageBucket: 'medical-31bb1.appspot.com',
   );
 
@@ -66,6 +68,7 @@ class DefaultFirebaseOptions {
     appId: '1:776473703039:ios:6cb2a52eaf33df8dd4454a',
     messagingSenderId: '776473703039',
     projectId: 'medical-31bb1',
+    databaseURL: 'https://medical-31bb1-default-rtdb.firebaseio.com',
     storageBucket: 'medical-31bb1.appspot.com',
     iosClientId: '776473703039-35t1i709gu982em274l1vpvj3aa9uddr.apps.googleusercontent.com',
     iosBundleId: 'com.example.medical1',
@@ -76,6 +79,7 @@ class DefaultFirebaseOptions {
     appId: '1:776473703039:ios:6cb2a52eaf33df8dd4454a',
     messagingSenderId: '776473703039',
     projectId: 'medical-31bb1',
+    databaseURL: 'https://medical-31bb1-default-rtdb.firebaseio.com',
     storageBucket: 'medical-31bb1.appspot.com',
     iosClientId: '776473703039-35t1i709gu982em274l1vpvj3aa9uddr.apps.googleusercontent.com',
     iosBundleId: 'com.example.medical1',
