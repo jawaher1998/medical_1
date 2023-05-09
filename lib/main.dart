@@ -17,7 +17,7 @@ void main() async {
 
     await Firebase.initializeApp(
       name: 'my teeth',
-      options: FirebaseOptions(
+      options: const FirebaseOptions(
         apiKey: "AIzaSyCt05ClNK4vjj2SaUx1XPX3SetcufxnfHc",
       appId: '1:776473703039:web:8d45958b102e6c06d4454a',
       messagingSenderId: '776473703039',
@@ -46,60 +46,85 @@ class _mState extends State<WelcomeScreen> {
           body:  Container(
             padding: const EdgeInsets.all(30.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image(image: const AssetImage(logoT)),
+                const Image(image: AssetImage(logoT)),
                 Column(
                   children: const [
-                    Text("مرحباً بك",
-                      style: TextStyle(color: title, fontSize: 40, fontWeight: FontWeight.normal),
+                    Text("مرحبًا",
+                      style: TextStyle(color: title, fontSize: 40, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,  ),
 
                   ],
                 ),
-                Row(
-                  children: [
-                    Expanded(
-                      child: OutlinedButton(
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context1) {
-                                return ClintLogin();
-                              }));
-                        },
-                        style: OutlinedButton.styleFrom(
-                          shape: RoundedRectangleBorder(),
-                          backgroundColor: tWhiteColor,
-                          side: BorderSide(color: tDarkBlueColor),
-                          padding: EdgeInsets.symmetric(vertical: 20),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+                        child: OutlinedButton(
+
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context1) {
+                                  return const ClintLogin();
+                                }));
+                          },
+                          style: OutlinedButton.styleFrom(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                            backgroundColor: tWhiteColor,
+
+                          ),
+
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+
+                              children:const [
+                            Text("تسجيل دخول للمريض", style: TextStyle(color: title,fontSize: 15,),textAlign:TextAlign.center, ),
+                            FittedBox(child:
+                            Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Image(image: AssetImage(user),width: 100,height: 100,alignment: Alignment.topRight,),
+                            )),
+
+                          ]
+                        )
+          ),
                         ),
 
-                        child: Text("تسجيل دخول للمريض", style: TextStyle(color: title),),
-                      ),
-                    ),
-                    const SizedBox(width: 10.0),
-                    Expanded(
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(),
-                          side: BorderSide(color: tWhiteColor),
-                          padding: EdgeInsets.symmetric(vertical: 20),
-                          primary: tDarkBlueColor,
 
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context1) {
-                                return Login();
-                              }));
-                        },
-                        child: Text("تسجيل دخول للأطباء ", style: TextStyle(color: tWhiteColor),),
+                    const SizedBox(width: 20.0),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+                  child: OutlinedButton(
+
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context1) {
+                              return const Login();
+                            }));
+                      },
+                      style: OutlinedButton.styleFrom(
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                        backgroundColor: tWhiteColor,
 
                       ),
-                    ),
-                  ],
-                )
-              ],
+
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+
+                          children:const [
+                            Text("تسجيل دخول للطبيب", style: TextStyle(color: title,fontSize: 15,),textAlign:TextAlign.center, ),
+                            FittedBox(child:
+                            Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Image(image: AssetImage(doctor),width: 100,height: 100,alignment: Alignment.topRight,),
+                            )),
+
+                          ]
+                      )
+                  ),
+                ),
+
+              ]
+
             ),
           ),
         ),),);

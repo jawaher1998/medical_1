@@ -14,11 +14,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 import 'brush.dart';
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(clintpage());
-}
 
 class clintpage extends StatelessWidget {
   @override
@@ -126,11 +121,11 @@ class _clintsState extends State<clints> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("مرحباً",
+                  const Text("مرحبًا",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
 
-Text("$UserName",style: TextStyle(fontSize: 35),),
+Text("$UserName",style: const TextStyle(fontSize: 35),),
                 ],
               ),
         InkWell(
@@ -146,22 +141,22 @@ Text("$UserName",style: TextStyle(fontSize: 35),),
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0xFFF4EDFC).withOpacity(1),
+                        color: const Color(0xFFF4EDFC).withOpacity(1),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
+                        offset: const Offset(0, 3), // changes position of shadow
                       ),
                     ],
                   ),
-                  margin: EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
+                  margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
 
                   child: Column(
                     children: [
                       Image.asset("assets/images/toothbrushes in cup.png"),
-                     FittedBox(
+                     const FittedBox(
                        child: Padding(
-                         padding: const EdgeInsets.symmetric(horizontal: 19.0 ),
-                         child: Text("كيف تفرش اسنانك ؟" ,style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),textAlign: TextAlign.center, maxLines: 2,),
+                         padding: EdgeInsets.symmetric(horizontal: 19.0 ,vertical: 10),
+                         child: FittedBox(child: Text("كيف تفرش اسنانك ؟" ,style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),textAlign: TextAlign.center, maxLines: 2,)),
                        ),
                      )
               ,
@@ -183,19 +178,19 @@ Text("$UserName",style: TextStyle(fontSize: 35),),
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        color:Color(0xFFF4EDFC).withOpacity(1),
+                        color:const Color(0xFFF4EDFC).withOpacity(1),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
+                        offset: const Offset(0, 3), // changes position of shadow
                       ),
                     ],
                   ),
-                  margin: EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
+                  margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
                   child: Column(
                     children: [
                       Image.asset("assets/images/yellow star.png"),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 19.0 ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 19.0 ,vertical: 10),
                         child: FittedBox(child: Text("مستوى نظافة اسنانك",style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),textAlign: TextAlign.center, maxLines: 2,)),
                       )
                     ],
@@ -212,20 +207,20 @@ Text("$UserName",style: TextStyle(fontSize: 35),),
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        color:Color(0xFFF4EDFC).withOpacity(1),
+                        color:const Color(0xFFF4EDFC).withOpacity(1),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
+                        offset: const Offset(0, 3), // changes position of shadow
                       ),
                     ],
                   ),
-                  margin: EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
+                  margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
                   child: Column(
                     children: [
                       Image.asset(
                           "assets/images/close up of white question mark.png"),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 10.0,horizontal: 19),
                         child: FittedBox(child: Text("اسئلة شائعة",style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),textAlign: TextAlign.center, maxLines: 2,)),
                       )
                     ],
@@ -243,22 +238,22 @@ Text("$UserName",style: TextStyle(fontSize: 35),),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
-                      color:Color(0xFFF4EDFC).withOpacity(1),
+                      color:const Color(0xFFF4EDFC).withOpacity(1),
                       spreadRadius: 5,
                       blurRadius: 7,
-                      offset: Offset(0, 3), // changes position of shadow
+                      offset: const Offset(0, 3), // changes position of shadow
                     ),
                   ],
                 ),
-                margin: EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
+                margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
                 child: Column(
                   children: [
                     Image.asset("assets/images/line.png"),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 19.0 ,vertical: 5),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 19.0 ,vertical: 10),
 
-                      child: FittedBox(child: Text("كيف تستخدم خيط الاسنان؟",style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),textAlign: TextAlign.center, maxLines: 2,)),
-                    )
+                      child:  Text("كيف تستخدم خيط الاسنان؟",style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),textAlign: TextAlign.center, maxLines: 2,)),
+
                   ],
                 ),
               ),
@@ -268,16 +263,16 @@ Text("$UserName",style: TextStyle(fontSize: 35),),
             borderRadius: BorderRadius.circular(30),
             color: Colors.white,
           ),
-            margin: EdgeInsets.symmetric(vertical: 70, horizontal: 30.0),
+            margin: const EdgeInsets.symmetric(vertical: 70, horizontal: 30.0),
             child: TextButton(
                   onPressed: (){
                 Get.to(booking());
-              }, child: Text("احجز موعد",style: TextStyle(fontSize: 20,),)
+              }, child: const Text("احجز موعد",style: TextStyle(fontSize: 20,),)
               )
           )
 
             ],
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
           ),
         ),

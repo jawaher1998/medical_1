@@ -77,7 +77,7 @@ class stateclinetlogin extends State<ClintLogin> {
                       height: size.height * 0.2),
                   SizedBox(height: 20,),
 
-                  Text("أهلا بك مراجعنا العزيز", style: TextStyle(color: title, fontSize: 30, fontWeight: FontWeight.normal), textAlign: TextAlign.center, ),                  Text("تفضل بتسجيل الدخول"),
+                  Text("أهلاً بك مراجعنا العزيز", style: TextStyle(color: title, fontSize: 30, fontWeight: FontWeight.normal), textAlign: TextAlign.center, ),                  Text("تفضل بتسجيل الدخول"),
                 ],
               ),
             Form(
@@ -93,7 +93,7 @@ class stateclinetlogin extends State<ClintLogin> {
                       decoration:  InputDecoration(
 
                           suffixIcon: Icon(Icons.person_outline_outlined, color: title),
-                          hintText: "البريد",
+                          hintText: "البريد الإلكتروني",
                           hintTextDirection: TextDirection.rtl,
                           hintStyle: TextStyle(color: title),
                           enabledBorder: OutlineInputBorder(

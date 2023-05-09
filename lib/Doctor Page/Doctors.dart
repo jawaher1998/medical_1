@@ -74,7 +74,7 @@ class _DoctorsState extends State<Doctors> {
                 backgroundColor: tLPurple,
                 title: Text("${NameDoctor}"),
                 leading: IconButton(
-                  icon: Icon(Icons.arrow_back),
+                  icon: const Icon(Icons.arrow_back),
                   onPressed: () => Navigator.pop(context, false),
                 )),
             body: SingleChildScrollView(
@@ -83,7 +83,7 @@ class _DoctorsState extends State<Doctors> {
                 children: <Widget>[
                   Row(children: [
                     Container(
-                        margin: EdgeInsets.all(20),
+                        margin: const EdgeInsets.all(20),
                         height: 120,
                         child: const Align(
                             alignment: Alignment.topLeft,
@@ -95,10 +95,10 @@ class _DoctorsState extends State<Doctors> {
                             ))),
                     Text(
                       "$UserName",
-                      style: TextStyle(fontSize: 20),
+                      style: const TextStyle(fontSize: 20),
                     )
                   ]),
-                  Padding(
+                  const Padding(
                       padding: EdgeInsets.all(20),
                       child: Text("التعليق",
                           style: TextStyle(
@@ -106,7 +106,7 @@ class _DoctorsState extends State<Doctors> {
                           textAlign: TextAlign.justify,
                           textDirection: TextDirection.rtl)),
                   Padding(
-                    padding: EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(15),
                     child: TextField(
                       textDirection: TextDirection.rtl,
                       controller: controller,
@@ -121,7 +121,7 @@ class _DoctorsState extends State<Doctors> {
                       ),
                     ),
                   ),
-                  Padding(
+                  const Padding(
                       padding: EdgeInsets.all(20),
                       child: Text("مستوى النظافة",
                           style: TextStyle(
@@ -134,12 +134,12 @@ class _DoctorsState extends State<Doctors> {
                         rating = value;
                         print(rating);
                       },
-                      itemBuilder: (context, _) => Icon(
+                      itemBuilder: (context, _) => const Icon(
                         Icons.star,
                         color: Colors.amber,
                       ),
                       allowHalfRating: true,
-                      itemPadding: EdgeInsets.symmetric(horizontal: 6.0),
+                      itemPadding: const EdgeInsets.symmetric(horizontal: 6.0),
                       glow: true,
                       direction: Axis.horizontal,
                       textDirection: TextDirection.rtl,
@@ -150,7 +150,7 @@ class _DoctorsState extends State<Doctors> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text("تقيمك للمريض: $rating نجمة "),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.all(20),
                     child: Text("الزيارة التالية",
                         style:
@@ -160,7 +160,7 @@ class _DoctorsState extends State<Doctors> {
                     height: 16,
                   ),
                   Padding(
-                    padding: EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(15),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -219,7 +219,7 @@ class _DoctorsState extends State<Doctors> {
                             context: context,
                             animType: AnimType.scale,
                             dialogType: DialogType.error,
-                            body: Center(child: Text(
+                            body: const Center(child: Text(
                               'الرجاء ادخال جميع البيانات الازمه ',
                               style: TextStyle(fontStyle: FontStyle.italic),
                             ),),
@@ -236,7 +236,7 @@ class _DoctorsState extends State<Doctors> {
                             context: context,
                             animType: AnimType.scale,
                             dialogType: DialogType.success,
-                            body: Center(child: Text(
+                            body: const Center(child: Text(
                               'تم ارسال البيانات بنجاح ',
                               style: TextStyle(fontStyle: FontStyle.italic),
                             ),),
@@ -248,8 +248,8 @@ class _DoctorsState extends State<Doctors> {
                       },
 
             child:Container(
-                      padding:EdgeInsets.all( 16),
-    child: Center(
+                      padding:const EdgeInsets.all( 16),
+    child: const Center(
         child: Text("أرسل")
     )
             )

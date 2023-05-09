@@ -43,9 +43,12 @@ class _teethleveState extends State<teethleve> {
 
   @override
   Widget build(BuildContext context) {
+
     getInfo();
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'مستوى نظافة الأسنان',
+        debugShowCheckedModeBanner: false,
+
         theme: ThemeData(
           colorSchemeSeed: tLPurple,
           useMaterial3: true,
